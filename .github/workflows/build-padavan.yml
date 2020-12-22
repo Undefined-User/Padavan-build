@@ -44,9 +44,7 @@ jobs:
       run: |
         cd /opt/hostedtoolcache/go
         rm -rf 1.14.12
-        wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
-        tar zxvf ./go1.15.5.linux-amd64.tar.gz
-        mv go 1.14.12
+        mv 1.15.6 1.14.12
     - name: Build Firmware
       env:
         #TNAME: K2P-5.0
