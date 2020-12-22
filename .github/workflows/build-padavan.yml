@@ -43,7 +43,9 @@ jobs:
     - name: Set Golang
       run: |
         cd /opt/hostedtoolcache/go
-        rm -rf /opt/hostedtoolcache/go/1.14.12
+        rm -rf 1.14.12
+        wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
+        tar zxvf ./go1.15.5.linux-amd64.tar.gz
         mv 1.15.5 1.14.12
     - name: Build Firmware
       env:
