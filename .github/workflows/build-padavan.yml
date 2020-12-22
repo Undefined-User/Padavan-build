@@ -46,7 +46,7 @@ jobs:
         rm -rf 1.14.12
         wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
         tar zxvf ./go1.15.5.linux-amd64.tar.gz
-        mv 1.15.5 1.14.12
+        mv go 1.14.12
     - name: Build Firmware
       env:
         #TNAME: K2P-5.0
